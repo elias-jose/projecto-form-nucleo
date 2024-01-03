@@ -76,10 +76,10 @@ html, body {
    color: #007bff;
    border-radius: 25px;
    max-width: 50%;
-   margin: 0;
+   margin: 10px;
 }
 
-.btn.open:hover {
+.btn.open:hover, .btn.close:hover, .btn.send:hover {
    color: #fff;
    background-color: #007bff;
 }
@@ -130,3 +130,59 @@ html, body {
    background-color: red;
    color: #fff;
 }
+
+.modal {
+   display: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #fff;
+   min-height: 40%;
+   min-width: 30%;
+   width: 350px;
+   opacity: 0;
+}
+
+.modal.show {
+   display: block;
+   opacity: 1;
+}
+
+.modal .modal-content {
+   display: flex;
+   flex-direction: column;
+   background-color: transparent;
+   width: 100%;
+}
+
+.modal .modal-content h1 {
+   font-weight: 900;
+   font-size: 23px;
+   font-family: Courier;
+   margin: 5px;
+   text-align: center;
+}
+
+.modal .modal-body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 1px;
+   width: 100%;
+}
+
+.modal-body dl * {
+   line-height: 30px;
+}
+
+.modal-body dd {
+   margin-left: 40px;
+   border-bottom: 1px solid #ccc;
+   width: 100%;
+}
+
+.modal-body dd:hover {
+   border-color: #007bff;
+   }

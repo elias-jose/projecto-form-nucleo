@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./index.css" />
-        <title>Projecto Cadastramento 1.0</title>
+        <title>Projecto Cadastramento 1.1</title>
     </head>
     <body>
         <div class="main">
@@ -12,7 +12,7 @@
                <!-- Elemento de exibição da página. -->
                 <div class="layout show">
                     <div class="op">
-                       <h1>Projecto Cadastramento 1.0</h1>
+                       <h1>Projecto Cadastramento 1.1</h1>
                         <p>
                            Projecto Cadastramento 1.0 é um formulário para cadastramento de usuários desenvolvido utilizando HTML, CSS & Javascript com objectivo de praticar e testar as capacidades da minha pessoa.
                            <i>By: Elias José</i>
@@ -22,7 +22,7 @@
                 </div>
                 <!-- Formulário da página. -->
                 <div class="layout form hide">
-                    <form action="#">
+                    <form action="#" id="data">
                         <h1>Projecto Cadastramento</h1>
                         <div class="form-elem">
                             <input
@@ -75,11 +75,11 @@
                                 <option value="Malanje">Malanje</option>
                                 <option value="Huíla">Huíla</option>
                                 <option value="Cunene">Cunene</option>
-                                <option value=""></option>
+                                <option value="Namibe">Namibe</option>
                             </select>
                         </div>
                         <div class="form-elem">
-                           <textarea name="txtpk" id="txtpk" placeholder="Porque que optou utilizar o nosso sistema?" required>
+                           <textarea name="txtpk" id="txtpk" placeholder="Porque que optou utilizar o nosso sistema?" value="" required>
                               
                            </textarea>
                         </div>
@@ -94,8 +94,26 @@
                     </form>
                 </div>
             </div>
+            
+            <div class="modal">
+               <div class="modal-content">
+                  <h1>Dados</h1>
+                  <div class="modal-body">
+                     <dl>
+                        <dt>Nome:</dt>
+                        <dd class="n"></dd>
+                        <dt>Numero</dt>
+                        <dd class="m"></dd>
+                        <dt>Província</dt>
+                        <dd class="p"></dd>
+                     </dl>
+                     <button class="btn close">Fechar</button>
+                  </div>
+               </div>
+            </div>
         </div>
 
         <script src="./index.js"></script>
     </body>
 </html>
+
